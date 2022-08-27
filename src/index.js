@@ -5,6 +5,9 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import ProductsProvider from "./context/productsContext";
+import configureStore from "./hooks-store/productsStore";
+
+configureStore();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
